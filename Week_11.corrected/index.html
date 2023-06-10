@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        .wrapper {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .wrapper__button {
+            background-color: rgb(16, 174, 174);
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 15px;
+        }
+
+        input:focus {
+            outline-color: rgb(16, 174, 174);
+        }
+
+        .wrapperlist {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        .error-input {
+            border: 1px solid red;
+        }
+    </style>
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="wrapper__title">ToDo List</h1>
+        <input class="wrapper__input" placeholder="Enter the task" type="text" />
+        <button class="wrapper__button">Add task</button>
+        <ul class="wrapperlist">
+
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
